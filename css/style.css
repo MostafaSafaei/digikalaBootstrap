@@ -1,0 +1,94 @@
+* {
+    /* padding: 0;
+    margin: 0;
+    box-sizing: border-box; */
+    font-family: Sahel;
+    direction: rtl;
+}
+
+@font-face {
+    font-family: Sahel;
+    src: url('../font/Sahel.eot');
+    src: url('../font/Sahel.eot?#iefix') format('embedded-opentype'),
+         url('../font/Sahel.woff2') format('woff2'),
+         url('../font/Sahel.woff') format('woff');
+    font-weight: normal;
+  }
+
+  
+.bg-header {
+    background-color: #ed1944;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.fs-7 {
+    font-size: small;
+}
+
+.fs-8 {
+    font-size: smaller;
+}
+
+.nav-link {
+    transition: all 0.2s;
+    position: relative;
+}
+
+
+.nav-link:hover::after {
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: #ed1944;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.bg-fresh {
+    background-color: #ecefee;
+    background-image: url(../image/freshPattern.svg);
+    background-repeat: no-repeat;
+}
+
+.bg-downloadApp {
+    background-color: #3c4b6d;
+}
+
+.bg-fbottom {
+    background-color: #f0f0f1;
+}
+
+@media (min-width: 768px){
+ .row-cols-md-8 > * {
+    flex: 0 0 auto;
+    width: 12.5%;
+ }
+}
+
+
+.row-cols-lg-12>*{flex:0 0 auto;width:8.3333333%}
+
+.container-xxl-custom {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 1400px) {
+    .container-xxl-custom {
+        max-width: 1650px;
+      }
+}
